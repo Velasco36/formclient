@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="form-body" id="form-body">
+    <div class="icon-container">
+      <p class="text">Cliente</p>
+      <br />
+      <form id="myForm">
+        <div class="mt-3">
+          <label for="firstName" class="form-label">Primer nombre</label>
+          <input
+            type="text"
+            class="form-control transparent-input"
+            id="firstName"
+            placeholder="Primer nombre"
+            required
+          />
+        </div>
+        <div class="mt-3">
+          <label for="lastName" class="form-label">Segundo nombre</label>
+          <input
+            type="text"
+            class="form-control transparent-input"
+            id="lastName"
+            placeholder="Segundo nombre"
+            required
+          />
+        </div>
+        <div class="mt-3">
+          <label for="firstSurname" class="form-label">Primer apellido</label>
+          <input
+            type="text"
+            class="form-control transparent-input"
+            id="firstSurname"
+            placeholder="Primer apellido"
+            required
+          />
+        </div>
+        <div class="mt-3">
+          <label for="secondSurname" class="form-label">Segundo apellido</label>
+          <input
+            type="text"
+            class="form-control transparent-input"
+            id="secondSurname"
+            placeholder="Segundo apellido"
+            required
+          />
+        </div>
+        <div class="mt-3">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input
+            type="email"
+            class="form-control transparent-input"
+            id="email"
+            placeholder="name@example.com"
+            required
+          />
+        </div>
+        <div class="mt-3">
+          <label for="password" class="form-label">Contraseña</label>
+          <input
+            type="password"
+            class="form-control transparent-input"
+            id="password"
+            placeholder="Contraseña"
+            required
+          />
+        </div>
+        <div class="mt-3">
+          <label for="status" class="form-label">Estatus</label>
+          <select class="form-select" id="status" required>
+            <option value="">Seleccione un estatus</option>
+            <option value="activo">Activo</option>
+            <option value="inactivo">Inactivo</option>
+            <option value="pendiente">Pendiente</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+  <script src="index.js"></script>
+
+</body>
+</html>
+
